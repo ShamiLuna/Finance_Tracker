@@ -79,6 +79,7 @@ dependencies:
   flutter_pdfview: ^1.0.4
   uuid:
   url_launcher: ^6.0.12
+  flutter_advanced_drawer:
 #  razorpay_flutter:
 
 
