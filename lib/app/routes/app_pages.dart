@@ -77,7 +77,7 @@ class AppPages {
     GetPage(
       name: Routes.SOMEMORE,
       page: () =>  Somemoreview(),
-      curve: Curves.easeInOut,
+      curve: Curves.fastOutSlowIn,
       transition: Transition.zoom,
       transitionDuration: const Duration(milliseconds: 500),
       binding: Somemorebinding(),
@@ -121,7 +121,7 @@ class AppPages {
     GetPage(
       name: _Paths.SIGNUP,
       page: () => const SignupView(),
-      curve: Curves.easeInOut,
+      curve: Curves.fastLinearToSlowEaseIn,
       transition: Transition.zoom,
       transitionDuration: const Duration(milliseconds: 500),
       binding: SignupBinding(),
@@ -134,7 +134,7 @@ class AppPages {
     GetPage(
       name: _Paths.LOGIN,
       page: () => const LoginView(),
-      curve: Curves.easeInOut,
+      curve: Curves.fastLinearToSlowEaseIn,
       transition: Transition.zoom,
       transitionDuration: const Duration(milliseconds: 500),
       binding: LoginBinding(),
@@ -222,7 +222,7 @@ class AppPages {
     GetPage(
       name: _Paths.C_BUDGET,
       page: () => CBudgetView(),
-      curve: Curves.easeInOut,
+      curve: Curves.fastEaseInToSlowEaseOut,
       transition: Transition.zoom,
       transitionDuration: const Duration(milliseconds: 500),
       binding: CBudgetBinding(),

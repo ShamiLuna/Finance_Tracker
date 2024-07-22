@@ -1,6 +1,6 @@
 {
-    "name": "financeapp",
-    "short_name": "financeapp",
+    "name": "Finance_Tracker",
+    "short_name": "Finance_Tracker",
     "start_url": "/index.html",
 
     "display": "standalone",

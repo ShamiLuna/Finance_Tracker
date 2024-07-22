@@ -38,17 +38,20 @@ class TransactionsView extends GetView<TransactionsController> {
                     Get.toNamed(Routes.BOTTOM);
                   },
                 ),
-                FittedBox(
-                  fit: BoxFit.scaleDown,
-                  child: Text(
-                    "All Transactions".tr,
-                    overflow: TextOverflow.ellipsis,
-                    maxLines: 2,
-                    style: TextStyle(
-                        color: Theme.of(context).primaryColorDark,
-                        fontFamily: 'Roboto',
-                        fontSize: MediaQuery.of(context).size.width * 0.04,
-                        fontWeight: FontWeight.w600),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      "  All Transactions".tr,
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                      style: TextStyle(
+                          color: Theme.of(context).primaryColorDark,
+                          fontFamily: 'Roboto',
+                          fontSize: MediaQuery.of(context).size.width * 0.04,
+                          fontWeight: FontWeight.w600),
+                    ),
                   ),
                 ),
                 Padding(

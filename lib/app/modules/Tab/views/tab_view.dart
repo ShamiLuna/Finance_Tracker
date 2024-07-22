@@ -175,11 +175,11 @@ class Tabn extends GetView {
               onTap: (){
                 Get.toNamed(Routes.BOTTOM);
               },
-              child: const Icon(Icons.arrow_back)),
+              child: Icon(Icons.arrow_back,color: Theme.of(context).primaryColorDark)),
           title:  Text(
             'Add Transaction'.tr,
-            style: const TextStyle(
-                fontSize: 20,
+            style:  TextStyle(
+                fontSize: 20,color: Theme.of(context).primaryColorDark,
                 fontFamily: 'Roboto',
                 fontWeight: FontWeight.w700),
           ),
