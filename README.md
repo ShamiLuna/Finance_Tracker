@@ -1,135 +1,106 @@
-# financeapp
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-Creating a README for your Flutter app is a great way to document its features, setup instructions, and usage guidelines. Here's a template tailored for your expenses and income tracking app that uses secured storage:
+Got it! Here’s a sample `README.md` you can use for your repository:
 
 ---
+You can see the preview of the app in below link,however the app depends on secured local storage file sharing feature works in apk ,but in pws needed indexeddb.
 
-# Expenses and Income Tracking App
 
-## Overview
+https://finance-6ce14.web.app
 
-This Flutter app allows users to track their expenses and income with features such as categorization by date, secure storage of data, and an intuitive user interface for viewing and managing financial records.
+
+
+# Finance Tracking App
+
+This Flutter application helps users track their expenses and incomes, providing insights into their financial activities. 
+The app supports adding, viewing, and managing expenses and incomes, all while storing sensitive data securely.
 
 ## Features
 
-- **Secure Storage**: Stores financial records securely using encrypted storage.
-- **Date-based Categorization**: Groups expenses and income by date.
-- **User Interface**: Provides dropdowns for date selection and lists expenses and incomes with details.
-- **Detailed Views**: Navigate to detailed views for individual records.
-- **No Data Animation**: Displays an animation when no data is available.
+- **Expense and Income Tracking:** Add and manage both expenses and incomes.
+- **Secure Storage:** Utilizes secured storage to handle sensitive data safely.
+- **Dynamic Charts:** Visualize expenses and incomes using pie charts.
+- **Date-Based Filtering:** Filter and view records by selected dates.
+- **Detailed View:** Access detailed views for each expense and income item.
+- **Customizable UI:** User-friendly interface with customizable themes and options.
 
-## Getting Started
+## Installation
 
-### Prerequisites
+To run this application locally, follow these steps:
 
-- Flutter SDK installed (version 3.0.0 or later recommended).
-- Dart SDK installed.
-- An IDE such as Android Studio or VS Code.
-
-### Installation
-
-1. **Clone the Repository**
-
+1. **Clone the Repository:**
    ```bash
-   git clone (https://github.com/Shafruttersoftware/Finance_updated.git)
+   git clone https://github.com/Shafruttersoftware/Finance_updated.git
    ```
 
-2. **Navigate to the Project Directory**
-
+2. **Navigate to the Project Directory:**
    ```bash
-   cd your-repository
+   cd Finance_updated
    ```
 
-3. **Install Dependencies**
-
+3. **Install Dependencies:**
    ```bash
    flutter pub get
    ```
 
-4. **Run the App**
-
+4. **Run the App:**
    ```bash
    flutter run
    ```
 
-### Configuration
+## Secured Storage
 
-1. **Secured Storage**
-
-   Ensure you have the `flutter_secure_storage` package included in your `pubspec.yaml`:
-
-   ```yaml
-   dependencies:
-     flutter_secure_storage: ^8.0.0
-   ```
-
-   This package is used for securely storing sensitive data.
-
-2. **Asset Files**
-
-   Ensure that your `assets` directory contains the necessary files for animations and any other assets used by the app. Update your `pubspec.yaml` with:
-
-   ```yaml
-   flutter:
-     assets:
-       - assets/images/nodata.json
-   ```
+This app uses secured storage to keep sensitive data like expense and income details safe. Ensure that you have configured the necessary environment and dependencies for secured storage to function correctly.
 
 ## Usage
 
-1. **Adding Records**
-
-   - Navigate to the relevant section (expenses or income).
-   - Use the input forms to add new records, including title, amount, date, and any additional details.
+1. **Add Expenses/Incomes:**
+   - Use the 'Add Expense' or 'Add Income' buttons to input new records.
+   - Fill in the required details such as title, amount, date, etc.
    
-2. **Viewing Records**
+2. **View Records:**
+   - Browse through the records displayed in the list view.
+   - Use the dropdowns to filter records by date.
 
-   - Use the dropdown to select a date.
-   - The records will be grouped by date and displayed in a list format.
-   - Tap on any item to view detailed information.
+3. **Visualize Data:**
+   - View pie charts representing the distribution of expenses or incomes based on categories.
 
-3. **Deleting Records**
+4. **Detailed View:**
+   - Tap on any record to view detailed information.
 
-   - Swipe left on an item in the list to reveal the delete option.
-   - Confirm deletion to remove the record.
+## Configuration
 
-## Code Structure
+- **Secured Storage Configuration:** Ensure you have the necessary keys and configurations for secured storage.
 
-- **`lib/main.dart`**: Entry point of the application.
-- **`lib/controllers`**: Contains the controllers responsible for managing state and business logic.
-- **`lib/views`**: Contains the various UI screens and components.
-- **`lib/models`**: Defines the data models used in the app.
-- **`lib/widgets`**: Custom widgets used throughout the app.
+- **Date Formatting:** Customize the date format as needed in the `formatDate` method.
 
-## Screenshots
+## Development
 
-Include relevant screenshots of the app here. This helps users understand the UI and functionality of the app.
+To contribute or make changes:
 
-## Contributing
+1. **Create a New Branch:**
+   ```bash
+   git checkout -b feature/your-feature
+   ```
 
-If you'd like to contribute to this project, please fork the repository and create a pull request with your changes. Ensure that your code adheres to the existing style and includes appropriate tests.
+2. **Make Changes and Commit:**
+   ```bash
+   git add .
+   git commit -m "Add your message here"
+   ```
+
+3. **Push Changes:**
+   ```bash
+   git push origin feature/your-feature
+   ```
+
+4. **Create a Pull Request:**
+
+   - Navigate to the repository on GitHub.
+   - Click on 'Pull Requests' and then 'New Pull Request'.
+   - Select your branch and submit the pull request for review.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or issues, please contact flutterappdevelopershamina@gmail.com
 
 ---
 
