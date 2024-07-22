@@ -28,12 +28,12 @@ To run this application locally, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/Shafruttersoftware/Finance_updated.git
+   git clone (https://github.com/ShamiLuna/Finance_Tracker.git)
    ```
 
 2. **Navigate to the Project Directory:**
    ```bash
-   cd Finance_updated
+   cd Finance_Tracker
    ```
 
 3. **Install Dependencies:**
