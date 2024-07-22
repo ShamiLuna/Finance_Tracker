@@ -2,7 +2,6 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:financeapp/app/modules/Tab/views/tab_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lottie/lottie.dart';
 import '../../../../provider/theme_provider.dart';
 import '../../Budget/views/budget_view.dart';
 import '../../Transactions/views/transactions_view.dart';

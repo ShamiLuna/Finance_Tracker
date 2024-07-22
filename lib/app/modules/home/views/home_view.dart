@@ -1,7 +1,4 @@
-import 'dart:ui';
 
-import 'package:financeapp/app/modules/Transactions/views/transactions_view.dart';
-import 'package:financeapp/app/modules/somemore/somemoreview.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
@@ -43,7 +40,8 @@ class HomeView extends GetView<HomeController> {
             child: Column(
               children: [
                 Container(
-                  height: 280,
+                  height:  MediaQuery.of(context).size.width *
+                      0.60,
                   decoration: BoxDecoration(
                     borderRadius: const BorderRadius.only(
                       bottomLeft: Radius.circular(30),
@@ -60,18 +58,8 @@ class HomeView extends GetView<HomeController> {
                   ),
                   child: Column(
                     children: [
-                      const Padding(
-                        padding: EdgeInsets.only(top: 25, left: 25, right: 25),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 6),
+
+                      const SizedBox(height: 26),
                       Padding(
                         padding: const EdgeInsets.all(6.0),
                         child: Text(
@@ -135,7 +123,7 @@ class HomeView extends GetView<HomeController> {
                                                       .width *
                                                   0.04,
                                               // 5% of screen width,
-                                              color: Color(0xFF0E7A53),
+                                              color: const Color(0xFF0E7A53),
                                             ),
                                           ),
                                         ),
@@ -150,7 +138,7 @@ class HomeView extends GetView<HomeController> {
                                                       .width *
                                                   0.04,
                                               // 5% of screen width,
-                                              color: Color(0xFF0E7A53),
+                                              color: const Color(0xFF0E7A53),
                                             ),
                                           ),
                                         ),
@@ -193,7 +181,7 @@ class HomeView extends GetView<HomeController> {
                                                       .width *
                                                   0.04,
                                               // 5% of screen width,
-                                              color: Color(0xFFC22727),
+                                              color: const Color(0xFFC22727),
                                             ),
                                           ),
                                         ),
@@ -208,7 +196,7 @@ class HomeView extends GetView<HomeController> {
                                                       .width *
                                                   0.04,
                                               // 5% of screen width,
-                                              color: Color(0xFFC22727),
+                                              color: const Color(0xFFC22727),
                                             ),
                                           ),
                                         ),
@@ -358,7 +346,7 @@ class HomeView extends GetView<HomeController> {
                   // height: 8,
                   width: 8,
                 ),
-                NeonLine(),
+                // NeonLine(),
                 const SizedBox(
                   height: 8,
                   width: 8,
@@ -1225,13 +1213,15 @@ class DataChart extends StatelessWidget {
 // import 'package:flutter/material.dart';
 
 class NeonLine extends StatelessWidget {
+  const NeonLine({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
       height: 4.0, // Thickness of the neon line
       decoration: BoxDecoration(
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           colors: [
             Colors.cyan,
             Colors.blue,
@@ -1255,7 +1245,7 @@ class NeonLine extends StatelessWidget {
             color: Colors.blue.withOpacity(0.6),
             blurRadius: 10,
             spreadRadius: 2,
-            offset: Offset(0, 0),
+            offset: const Offset(0, 0),
           ),
         ],
       ),

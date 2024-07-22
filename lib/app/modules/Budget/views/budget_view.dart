@@ -331,7 +331,7 @@ class BudgetView extends GetView<BudgetController> {
             children: [
               Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: Container(
+                child: SizedBox(
                   height: 150,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,

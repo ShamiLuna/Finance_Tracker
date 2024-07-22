@@ -225,12 +225,12 @@ class LoginView extends GetView<LoginController> {
                   child: Container(
                       height: 100,
                       width: 100,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                       ),
                       child: Image.asset('assets/images/logo.jpeg',fit: BoxFit.fill,)),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 40,
               ),
               Padding(

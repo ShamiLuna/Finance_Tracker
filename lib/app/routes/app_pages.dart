@@ -79,7 +79,7 @@ class AppPages {
       page: () =>  Somemoreview(),
       curve: Curves.easeInOut,
       transition: Transition.zoom,
-      transitionDuration: Duration(milliseconds: 500),
+      transitionDuration: const Duration(milliseconds: 500),
       binding: Somemorebinding(),
     ),
     GetPage(
@@ -123,7 +123,7 @@ class AppPages {
       page: () => const SignupView(),
       curve: Curves.easeInOut,
       transition: Transition.zoom,
-      transitionDuration: Duration(milliseconds: 500),
+      transitionDuration: const Duration(milliseconds: 500),
       binding: SignupBinding(),
     ),
     GetPage(
@@ -136,7 +136,7 @@ class AppPages {
       page: () => const LoginView(),
       curve: Curves.easeInOut,
       transition: Transition.zoom,
-      transitionDuration: Duration(milliseconds: 500),
+      transitionDuration: const Duration(milliseconds: 500),
       binding: LoginBinding(),
     ),
     GetPage(
@@ -224,7 +224,7 @@ class AppPages {
       page: () => CBudgetView(),
       curve: Curves.easeInOut,
       transition: Transition.zoom,
-      transitionDuration: Duration(milliseconds: 500),
+      transitionDuration: const Duration(milliseconds: 500),
       binding: CBudgetBinding(),
     ),
     // GetPage(

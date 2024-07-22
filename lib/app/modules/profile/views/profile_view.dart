@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'dart:ui';
 
 import 'package:financeapp/app/ssstorage/secured_storage_service.dart';
 import 'package:flutter/material.dart';
@@ -146,7 +145,7 @@ class ProfileView extends GetView<ProfileController> {
                     ),
                   ),
                   Padding(
-                    padding:  EdgeInsets.all(16.0),
+                    padding:  const EdgeInsets.all(16.0),
                     child: Container(
                       height: 420,
                       decoration: BoxDecoration(

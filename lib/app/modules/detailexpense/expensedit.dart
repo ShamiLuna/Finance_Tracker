@@ -66,7 +66,7 @@ class _EditExpenseViewState extends State<EditExpenseView> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).cardColor,
-        title:  Text('Edit Expense',style: TextStyle(fontWeight: FontWeight.bold,fontSize: MediaQuery.of(context).size.width * 0.5),),
+        title:  const Text('Edit Expense',style: TextStyle(fontWeight: FontWeight.bold),),
         actions: [
           IconButton(
             icon: const Icon(Icons.save),

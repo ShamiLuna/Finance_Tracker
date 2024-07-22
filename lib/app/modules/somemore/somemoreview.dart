@@ -86,7 +86,7 @@ class Somemoreview extends StatelessWidget {
                 return Center(
                     child: Text(
                   'No expenses added'.tr,
-                  style: TextStyle(fontFamily: 'Roboto'),
+                  style: const TextStyle(fontFamily: 'Roboto'),
                 ));
               }
               return ListView.builder(

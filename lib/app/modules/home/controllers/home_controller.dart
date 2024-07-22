@@ -13,7 +13,6 @@ import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import '../../Budget/controllers/budget_controller.dart';
-import '../../Transactions/views/transactions_view.dart';
 
 
 
@@ -216,8 +215,10 @@ class HomeController extends GetxController {
       try {
         final result = await FilePicker.platform.pickFiles(type: FileType.any);
         if (result != null && result.files.single.path != null) {
-          selectedFile1.value = File(result.files.single.path!);
-
+          final pickedFile = File(result.files.single.path!);
+          // selectedFile1.value = File(result.files.single.path!);
+          selectedFile1.value = pickedFile;
+          print('Picked file: ${pickedFile.path}');
           // await saveFileSecurely(selectedFile.value!,'');
         } else {
           selectedFile1.value = null;
@@ -1211,6 +1212,7 @@ class HomeController extends GetxController {
         final bytes = await file.readAsBytes();
         final base64File = base64Encode(bytes);
         await _secureStorage.write(key: "${key}_file", value: base64File);
+        print('File stored: ${file.path}');
       }
       // await _secureStorage.write(key: "${key}_receipt", value: receipt);
       // await _secureStorage.write(key: "${key}_receipt", value: invoice);

@@ -27,7 +27,7 @@ class HelpPage extends GetView<HelpController> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).cardColor,
-        title:  Text('Help',style: TextStyle(fontFamily: 'Roboto',fontSize: 18,fontWeight: FontWeight.bold),),
+        title:  const Text('Help',style: TextStyle(fontFamily: 'Roboto',fontSize: 18,fontWeight: FontWeight.bold),),
       ),
       body: Center(
         child: Padding(
@@ -44,7 +44,7 @@ class HelpPage extends GetView<HelpController> {
                 ),
               ),
               const SizedBox(height: 20.0),
-               Text(
+               const Text(
                 'If you have any questions, doubts, or suggestions for improvement, please feel free to contact us at:',style: TextStyle(fontSize: 16,fontFamily: 'Roboto'),
                 textAlign: TextAlign.center,
               ),

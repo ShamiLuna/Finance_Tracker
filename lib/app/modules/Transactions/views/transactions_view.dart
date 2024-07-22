@@ -22,7 +22,7 @@ class TransactionsView extends GetView<TransactionsController> {
     return SafeArea(
       child: Scaffold(
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(60.0),
+          preferredSize: const Size.fromHeight(60.0),
           child: Padding(
             padding: const EdgeInsets.only(left: 15.0),
             child: Row(
@@ -1131,7 +1131,7 @@ class BottomSheetContent extends StatelessWidget {
                           ),
                           Text(
                             "Expenses".tr,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontFamily: 'Roboto',
                                 fontWeight: FontWeight.w600),
                           ),

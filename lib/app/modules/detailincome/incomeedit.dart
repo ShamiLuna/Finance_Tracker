@@ -81,7 +81,7 @@ class _EditIncomeViewState extends State<EditIncomeView> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).cardColor,
-        title: const Text('Edit Income'),
+        title: const Text('Edit Income',style: TextStyle(fontWeight: FontWeight.bold)),
         actions: [
           IconButton(
             icon: const Icon(Icons.save),

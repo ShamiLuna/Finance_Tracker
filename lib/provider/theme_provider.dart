@@ -552,7 +552,7 @@ class MyAnimatedIcon extends StatelessWidget {
   final ThemeProvider themeProvider; // Add ThemeProvider instance
   final IconData iconData;
 
-  MyAnimatedIcon({
+  const MyAnimatedIcon({super.key, 
     required this.animationPath,
     this.height = 60,
     this.reverse = true,

@@ -1140,7 +1140,7 @@ class Tabn extends GetView {
     return Obx(() {
       final file = controller1.selectedFile.value;
       if (file == null) {
-        return const Text("No file selected");
+        return const Text("No file selected", style: TextStyle(fontFamily: 'Roboto'));
       } else {
         Widget fileDisplay;
         if (file.path.endsWith(".jpg") || file.path.endsWith(".png")) {

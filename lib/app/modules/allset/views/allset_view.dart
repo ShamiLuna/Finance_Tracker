@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lottie/lottie.dart';
 import '../../../../provider/theme_provider.dart';
 import '../../onboard/views/onboard_view.dart';
 import '../controllers/allset_controller.dart';

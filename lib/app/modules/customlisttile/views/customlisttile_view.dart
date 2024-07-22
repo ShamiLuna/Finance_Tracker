@@ -1157,7 +1157,7 @@ class ShoppingTransactions extends StatelessWidget {
                     width: 32,
                     height: 32,
                     padding: const EdgeInsets.all(4),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.red, // Changed to red color
                       shape: BoxShape.circle, // Changed to BoxShape.circle
                     ),
